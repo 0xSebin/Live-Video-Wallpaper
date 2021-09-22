@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo apt-get install xorg-dev build-essential libx11-dev x11proto-xext-dev libxrender-dev libxext-dev
+sudo apt update
+sudo apt upgrade
+sudo apt-get install xorg-dev build-essential libx11-dev x11proto-xext-dev libxrender-dev libxext-dev -y
 git clone https://github.com/ujjwal96/xwinwrap.git
 cd xwinwrap
 make
